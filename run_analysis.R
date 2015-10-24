@@ -71,4 +71,4 @@ combined_data <- cbind(subject_merge,y_merge,x_merge_subset)
 avg_data <- aggregate(.~Subject+Activity,combined_data,mean)
 
 #write data into file
-write.table(avg_data,file="./tidy_avg_data.txt")
+write.table(avg_data,file="./tidy_avg_data.txt",row.names=FALSE)
